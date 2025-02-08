@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!--displays in browser tab-->
+    <title>CSC102 Home Page</title>
+    <!--links css to html-->
+    <link rel="stylesheet" href="index.css">
+    <!--links js to html and defer executes script after html is loaded but before event-->
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!--Displayed text in center of page-->
+    <h1>Welcome to my CSC102 Home Page</h1>
+    
+    <!--container for background image links to css-->
+    <div class="background-container">
+    <img id="memeImage" src="meme.jpg" >
+    </div>
+    
+    <!--container for buttons links to css-->
+    <div class="button-container">
+        <button id="startButton" onclick="intervalStart();">Start</button>
+        <button id="stopButton" onclick="intervalStop();" disabled>Stop</button>
+    </div>
+    
+    <!--the moving image-->
+    <img src="rocket.jpg" id="imgDog">
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Body properties */
+body 
+{
+  margin: 0;
+  background-color: #841010; /* Set a background color */
+  color: #ede6e6; /* Set the text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Background Image properties */
+.background-container 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Send background image behind other content */
+}
+
+#memeImage 
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the background without distortion */
+}
+
+/* Button container properties */
+.button-container 
+{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Button properties */
+button {
+  width: 200px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  background-color: black; /* Button background color */
+  color: white; /* Button font color */
+  font-size: 1.5em; /* Make the font size 50% larger */
+  border: none; /* Remove default border */
+  border-radius: 15px; /* Round the corners of the buttons */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Rocket image properties */
+#imgDog 
+{
+  width: 200px; /* Set width */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position for movement */
+  left: 100px; /* Initial position */
+  top: 100px; /* Initial position */
+}
+
+/* Header properties */
+h1 
+{
+  text-align: center; /* Align text to center */
+  font-size: 72px; /* Set font size */
+  font-weight: bold; /* Set font weight to bold */
+  color: #fcfbfb; /* Set text color */
+  font-family: Arial, sans-serif; /* Set font to Arial */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the font */
+}
